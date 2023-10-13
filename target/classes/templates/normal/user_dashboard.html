@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org"
+      th:replace="normal/base::layout(~{::section})">
+
+<head>
+    <meta charset="UTF-8">
+    <title>This is Homepage</title>
+
+
+
+
+</head>
+<body>
+        <section>
+            <div class="container">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="container text-center">
+                            <img src="" style="height: 200px; width: 200px;" class="my_profile_photo" th:src="@{'/img/contact_logo.png'}" alt="profile photo"/>
+                        </div>
+                        <h1 class="text-center">Start Adding your contacts</h1>
+                        <a th:href="@{/user/add-contact}" class="btn btn-primary btn-block">Add New contact</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+</body>
+</html>
